@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root{
+  --pink: #fe00bb;
+  --white: #ffffff;
+  --dark: #1e1c2a;
+}
+
+body{
+  color: var(--dark);
+  background: var(--white);
+}
+
+.interface{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 40px;
+  box-shadow: 0 0.1rem 0.5rem #ccc;
+  width: 100%;
+  background: var(--white);
+  transition: all 0.5s;
+  position: fixed;
+}
+
+.interface .logo{
+color: var(--dark);
+font-size: 1.7rem;
+font-weight: 600;
+}
+
+.logo span{
+  color: var(--pink);
+}
+
+.interface ul{
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+.interface ul li a{
+  color: var(--dark);
+  font-size: 17px;
+  font-weight: 500;
+  transition: all 0.5s;
+}
+
+.interface ul li a:hover{
+  color:var(--pink) ;
+}
+
+.interface i{
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.menu{
+  cursor: pointer;
+  display: none;
+}
+
+.menu .bar{
+  display: block;
+  width: 28px;
+  height: 3px;
+  border-radius: 3px;
+  background: var(--dark);
+  margin: 5px auto;
+  transition: all 0.3s;
+}
+.menu .bar:nth-child(1),
+.menu .bar:nth-child(3){
+  background: var(--pink);
+}
+
+.inicio{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 10%;
+}
+
+.home-text{
+  max-width: 37rem;
+}
+
+.home-text .text-h4{
+  font-size: 1.5 rem;
+  color:var(--dark) ;
+  margin-bottom: 1rem;
+}
+
+.home-text .text-h1{
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  line-height: 4rem;
+  color: var(--pink);
+}
+
+.home-text p{
+  margin-bottom: 4rem;
+}
+
+.home-img{
+  width: 100%;
+}
+
+h2.titulo{
+  color: var(--pink);
+  font-size: 38px;
+  text-align: center;
+}
+ h2.titulo span{
+  color: var(--dark);
+ }
+
+ section.sobre{
+  padding: 40px 4%;
+ }
+
+.flex{
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+ .sobre .sobre-box{
+  padding: 40px;
+  border-radius: 20px;
+  margin-top: 45px;
+  transition: .2s;
+  cursor: pointer;
+ }
+ .sobre .sobre-box:hover{
+transform: scale(1.05);
+box-shadow: 0 0 8px var(--dark);
+ }
+
+ .sobre .sobre-box i{
+  font-size: 70px;
+  color: var(--pink);
+ }
+
+ .sobre .sobre-box h3{
+  font-size: 28px;
+  margin: 15px 0;
+ }
+
+ section.tutoriais{
+  padding: 40px;
+ }
+h2.sessaotutorial{
+  font-size: 38px;
+  text-align: center;
+}
+ .mainyt{
+  display: flex;
+  justify-content: center;
+ }
+
+ .card{
+  margin: 30px;
+  background-color: #ffffff;
+  width: 300px;
+  height: 350px;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.card>h1 {
+font-size: 14px;
+padding-top: 10px;
+}
+
+.card>img {
+  width: 100%;
+  border-top-left-radius:10px ;
+  border-top-right-radius:10px;
+}
+
+.card>p{
+  padding: 20px 20px;
+}
+
+.btn{
+  font-size: 17px;
+  padding: 10px 50px;
+  border: none;
+  background-color: var(--dark);
+  color: var(--white);
+  border-radius: 10px;
+  font-weight: 400;
+  cursor: pointer;
+}
